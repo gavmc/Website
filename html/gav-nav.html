@@ -12,7 +12,6 @@
         position: fixed;
         top: 0;
         left: 0;
-
       }
 
       .body{
@@ -133,17 +132,14 @@
       var webName;
       var search;
 
-
       window.onload = function(){
         webName = document.getElementById('websiteName');
         search = document.getElementById('search');
         adjustTask();
       }
 
-
       window.onresize = function() {
         adjustTask();
-
       }
 
       function adjustTask(){
@@ -151,17 +147,15 @@
           webName.textContent = 'w';
           search.className = 'searchBarMin';
 
-
         }else{
           webName.textContent = 'website name';
           search.className = 'searchBar';
         }
       }
 
-
     </script>
-
   </head>
+  
   <body class="body">
     
     <div class="navBar"></div>
@@ -173,11 +167,9 @@
     <a href="#">
       <input type="button" name="" value="sign up" class="signUp" user-select:none>
     </a>
-
     <a href="#">
       <input type="button" name="" value="create" class="createTab" user-select:none>
     </a>
-
-
+    
   </body>
 </html>
