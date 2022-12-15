@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+      * { margin: 0; padding : 0; }
+
+      .navBar{
+        background-color: #140005;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+      }
+
+      .body{
+        background-color: #BBC4C2;
+      }
+
+      .name{
+        color: #BBC4C2;
+        font-family: 'Montserrat', sans-serif;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        user-select: none;
+      }
+
+      .searchBar{
+        background-color: #BBC4C2;
+        position: fixed;
+        width: 30%;
+        max-width: 450px;
+        top: 12.5px;
+        left: 270px;
+        border-radius: 5px;
+        border-width: 0px;
+        height: 35px;
+        outline: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .searchBarMin{
+        background-color: #BBC4C2;
+        position: fixed;
+        width: 15%;
+        max-width: 450px;
+        top: 12.5px;
+        left: 60px;
+        border-radius: 5px;
+        border-width: 0px;
+        height: 35px;
+        outline: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+
+
+      .login{
+        position: fixed;
+        width: 90px;
+        max-width: 100px;
+        height: 40px;
+        right: 125px;
+        top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        outline-width: 0px;
+        font-size: 17px;
+        background-color: #140005;
+        color: #BBC4C2;
+        border: none;
+      }
+
+      .login:hover{
+        background-color: #210008;
+      }
+
+      .signUp{
+        background-color: #140005;
+        position: fixed;
+        width: 90px;
+        height: 40px;
+        right: 20px;
+        top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        outline-width: 0px;
+        color: #BBC4C2;
+        border: none;
+        font-size: 17px;
+      }
+
+      .signUp:hover{
+        background-color: #210008;
+      }
+
+      .createTab{
+        background-color: #140005;
+        position: fixed;
+        width: 90px;
+        height: 40px;
+        right: 230px;
+        top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        outline-width: 0px;
+        color: #BBC4C2;
+        border: none;
+        font-size: 17px;
+      }
+
+      .createTab:hover{
+        background-color: #210008;
+      }
+
+
+
+    </style>
+    <meta charset="utf-8">
+    <title>website</title>
+
+    <script type="text/javascript">
+      var webName;
+      var search;
+
+
+      window.onload = function(){
+        webName = document.getElementById('websiteName');
+        search = document.getElementById('search');
+        adjustTask();
+      }
+
+
+      window.onresize = function() {
+        adjustTask();
+
+      }
+
+      function adjustTask(){
+        if(window.innerWidth < 900){
+          webName.textContent = 'w';
+          search.className = 'searchBarMin';
+
+
+        }else{
+          webName.textContent = 'website name';
+          search.className = 'searchBar';
+        }
+      }
+
+
+    </script>
+
+  </head>
+  <body class="body">
+    
+    <div class="navBar"></div>
+    <h1 class="name", id='websiteName'>website name</h1>
+    <input type="text" class="searchBar" placeholder="Find new tools..." user-select:none id=search autocomplete="off">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <input type="button" name="" value="login" class="login" user-select:none>
+    </a>
+    <a href="#">
+      <input type="button" name="" value="sign up" class="signUp" user-select:none>
+    </a>
+
+    <a href="#">
+      <input type="button" name="" value="create" class="createTab" user-select:none>
+    </a>
+
+
+  </body>
+</html>
